@@ -12,7 +12,7 @@ from collections import Counter
     File Name: Main.py
     Author: Ryan Bell & Sam Woodworth
     Date Created: 4/19/2021
-    Date Last Modified: 4/19/2021
+    Date Last Modified: 5/9/2021
     Python Version: 3.8.5
 """
 
@@ -146,7 +146,7 @@ def correctWord(word):
     if potential:
         corrected = potential[0]
     else:
-        corrected = suggestFrompairs(word)
+        corrected = suggestFromPairs(word)
     return corrected
 
 
