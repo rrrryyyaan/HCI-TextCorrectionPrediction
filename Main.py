@@ -123,6 +123,10 @@ def correctFile():
             w.write(word)
             w.write("\n")
             continue
+        if(compareDic(word)):
+            w.write(word)
+            w.write("\n")
+            continue
         potential = oneEdit(word)
         if potential:
             w.write(potential[0])
@@ -222,7 +226,6 @@ def pickBestWord(word, pot_list):
 
 
 def oneEdit(word):
-
     all_list = list()
     updated_list = list()
 
@@ -338,3 +341,5 @@ if __name__ == '__main__':
         print("Text CORRECTION program selected. Please follow the prompts.")
         #suggestFromPairs("fining")
         correctFile()
+
+    
